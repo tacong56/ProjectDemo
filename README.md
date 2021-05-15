@@ -3,6 +3,7 @@
 - ASP.NET Core 3.1
 - Entity Framework Core 3.1
 - MySql
+- Fluent Api
 ## Install package
 ### Note: MySql.Data.EntityFrameworkCore deprecated so use Pomelo.EntityFrameworkCore.MySql
 - Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.0
@@ -13,3 +14,4 @@
 - Microsoft.Extensions.Configuration 5.0.0
 - Microsoft.Extensions.Configuration.Json 5.0.0
 ## Command
+- Add migration: add-migration {name_migration}
