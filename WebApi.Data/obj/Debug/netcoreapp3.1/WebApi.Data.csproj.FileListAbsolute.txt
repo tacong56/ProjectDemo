@@ -1,0 +1,12 @@
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.deps.json
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.runtimeconfig.json
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.runtimeconfig.dev.json
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.pdb
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.csprojAssemblyReference.cache
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.AssemblyInfoInputs.cache
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.AssemblyInfo.cs
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.pdb
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.genruntimeconfig.cache
