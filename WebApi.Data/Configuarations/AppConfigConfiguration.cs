@@ -13,7 +13,6 @@ namespace WebApi.Data.Configuarations
         {
             builder.ToTable("AppConfigs"); //Set name of table in database
             builder.HasKey(x => x.Key); //Set Key for table
-            builder.Property(x => x.Key).UseMySqlIdentityColumn(); //Set identity for property Key
             builder.Property(x => x.Value).IsRequired(); //Set not null for property Key
         }
     }

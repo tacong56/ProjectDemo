@@ -12,4 +12,5 @@
 - Microsoft.EntityFrameworkCore 5.0.5 (minimum 5.0.5 to use Pomelo.EntityFrameworkCore.MySql)
 - Microsoft.Extensions.Configuration 5.0.0
 - Microsoft.Extensions.Configuration.Json 5.0.0
+- FluentValidation.AspNetCore
 ## Command

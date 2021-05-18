@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WebApi.Data.Entities
 {
-    public class CartegoryTranslation
+    public class CategoryTranslation
     {
         public int Id { set; get; }
         public int CategoryId { set; get; }

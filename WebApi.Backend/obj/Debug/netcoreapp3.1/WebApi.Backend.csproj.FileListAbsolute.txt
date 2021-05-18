@@ -63,3 +63,7 @@ C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\WebApi.Da
 C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\obj\Debug\netcoreapp3.1\WebApi.Backend.csproj.CopyComplete
 C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\obj\Debug\netcoreapp3.1\WebApi.Backend.MvcApplicationPartsAssemblyInfo.cs

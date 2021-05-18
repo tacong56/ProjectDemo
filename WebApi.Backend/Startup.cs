@@ -1,6 +1,8 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -11,7 +13,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApi.Backend.Interfaces;
+using WebApi.Backend.Services;
+using WebApi.Backend.Validators;
 using WebApi.Data.EF;
+using WebApi.Data.Entities;
 
 namespace WebApi.Backend
 {
@@ -31,7 +37,18 @@ namespace WebApi.Backend
             services.AddDbContext<WebApiDbContext>(options =>
                 options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
-            services.AddControllers();
+            services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<WebApiDbContext>();
+
+            //Declare DI
+            services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
+            services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
+            services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
+
+            services.AddTransient<IUser, UserService>();
+
+            services.AddControllers()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<RegisterRequestValidator>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +67,10 @@ namespace WebApi.Backend
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    //pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "api/{controller=User}/{action=Index}/{id?}");
             });
         }
     }

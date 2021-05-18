@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EstbW+m28eXVJGnTBQ8K+be7jbjpYJJKJQVJBe4cQjILJ0zYA1fORxO0IUZcpcgk5XQRLX9AgIk9ZeeKrHdR/g==",
+  "dgSpecHash": "wzkHAruMAZ7uyq6h9nehgrTCwNw/vVUXuJgwmCWBfTC6mhRyOYGUhjsH9zVvpeDbhnSyYo775T5Vuv6NgYFDRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ta Cong\\Desktop\\WebApi\\WebApi.Backend\\WebApi.Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ta Cong\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
+    "C:\\Users\\Ta Cong\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512",
+    "C:\\Users\\Ta Cong\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.1.0\\fluentvalidation.aspnetcore.10.1.0.nupkg.sha512",
+    "C:\\Users\\Ta Cong\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.1.0\\fluentvalidation.dependencyinjectionextensions.10.1.0.nupkg.sha512",
     "C:\\Users\\Ta Cong\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\Ta Cong\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ta Cong\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
