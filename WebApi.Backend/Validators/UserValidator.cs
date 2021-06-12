@@ -13,7 +13,7 @@ namespace WebApi.Backend.Validators
         {
             RuleFor(x => x.UserName)
                 .NotEmpty().WithMessage("Username is required.")
-                .MinimumLength(6).WithMessage("Username has is at least 6 character.");
+                .MinimumLength(4).WithMessage("Username has is at least 4 character.");
             RuleFor(x => x.Password)
                 .NotEmpty().WithMessage("Password is required.")
                 .MinimumLength(6).WithMessage("Password has is at least 6 character.");
@@ -26,9 +26,8 @@ namespace WebApi.Backend.Validators
             RuleFor(x => x.LastName)
                 .NotEmpty().WithMessage("LastName is required.")
                 .MaximumLength(50).WithMessage("LastName can not over 50 characters");
-            RuleFor(x => x.Dob)
-                .NotNull().WithMessage("Dob is required.");
-            //.GreaterThan(DateTime.Now.AddYears(-100)).WithMessage("Birthday cannot greater than 100 years");
+            //RuleFor(x => x.Dob)
+            //    .GreaterThan(DateTime.Now.AddYears(-100)).WithMessage("Birthday cannot greater than 100 years");
             RuleFor(x => x.Email)
                 .NotEmpty().WithMessage("Email is required.")
                 .EmailAddress();
@@ -39,6 +38,17 @@ namespace WebApi.Backend.Validators
                     context.AddFailure("Confirm password is math");
                 }
             });
+        }
+    }
+
+    public class AuthenticateRequestValidator : AbstractValidator<AuthenticateRequest>
+    {
+        public AuthenticateRequestValidator()
+        {
+            RuleFor(x => x.UserName).NotEmpty().WithMessage("Username is required.")
+                .MinimumLength(4).WithMessage("Username has is at least 4 character.");
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Password is required.")
+                .MinimumLength(4).WithMessage("Password has is at least 6 character.");
         }
     }
 }

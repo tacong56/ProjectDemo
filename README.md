@@ -13,4 +13,5 @@
 - Microsoft.Extensions.Configuration 5.0.0
 - Microsoft.Extensions.Configuration.Json 5.0.0
 - FluentValidation.AspNetCore
+- Jwt-authencation: https://jasonwatmore.com/post/2019/10/11/aspnet-core-3-jwt-authentication-tutorial-with-example-api
 ## Command

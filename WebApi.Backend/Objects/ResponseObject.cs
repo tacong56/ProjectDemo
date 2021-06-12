@@ -63,5 +63,35 @@ namespace WebApi.Backend.Objects
             Msg = msg;
             Code = code;
         }
+
+        public SuccessResponseData(string msg, T data)
+        {
+            Error = 0;
+            Msg = msg;
+            Data = data;
+        }
+    }
+
+    public class PaginationResult<T>
+    {
+        public int Page { get; set; }
+        public int TotalRecord { get; set; }
+        public int Limit { get; set; }
+        public int TotalPages
+        {
+            get
+            {
+                return (int)Math.Ceiling((double)(TotalRecord / Limit));
+            }
+        }
+        public List<T> items { get; set; }
+    }
+
+
+
+    public class BaseRequest
+    {
+        public int Page { get; set; }
+        public int Limit { get; set; }
     }
 }

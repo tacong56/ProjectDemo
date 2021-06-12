@@ -67,3 +67,11 @@ C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\FluentVal
 C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\obj\Debug\netcoreapp3.1\WebApi.Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Ta Cong\Desktop\WebApi\WebApi.Backend\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

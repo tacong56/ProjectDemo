@@ -89,13 +89,6 @@ namespace WebApi.Data.Migrations
                     b.HasKey("UserId", "RoleId");
 
                     b.ToTable("AppUserRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = new Guid("136fe0ed-c020-4376-9308-bd3eedd86473"),
-                            RoleId = new Guid("adea5474-ac7c-46e3-81d2-181f7636f389")
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
@@ -155,16 +148,6 @@ namespace WebApi.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("adea5474-ac7c-46e3-81d2-181f7636f389"),
-                            ConcurrencyStamp = "91ef6546-b93f-4543-8c2b-d7902943b7d2",
-                            Description = "Admintrator role",
-                            Name = "admin",
-                            NormalizedName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("WebApi.Data.Entities.AppUser", b =>
@@ -210,6 +193,11 @@ namespace WebApi.Data.Migrations
                     b.Property<string>("NormalizedUserName")
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
                     b.Property<string>("PasswordHash")
                         .HasColumnType("longtext");
 
@@ -231,27 +219,6 @@ namespace WebApi.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppUsers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("136fe0ed-c020-4376-9308-bd3eedd86473"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "af07a2ba-3c83-41d1-974c-d4dc4095e15a",
-                            Dob = new DateTime(1997, 6, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "tacong56@gmail.com",
-                            EmailConfirmed = true,
-                            FirstName = "Ta",
-                            LastName = "Cong",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "tacong56@gmail.com",
-                            NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAECuip2DCKf2fhvv49XerJJ5IBijutBipfoXgaUsnX1QuZ9I9w4KPXb+8GxVEe5Slog==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("WebApi.Data.Entities.Cart", b =>
@@ -466,6 +433,9 @@ namespace WebApi.Data.Migrations
 
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsFeatured")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<decimal>("OriginalPrice")
                         .HasColumnType("decimal(65,30)");

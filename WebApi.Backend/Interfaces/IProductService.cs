@@ -7,8 +7,9 @@ using WebApi.Backend.Objects;
 
 namespace WebApi.Backend.Interfaces
 {
-    public interface IUser
+    public interface IProductService
     {
-        Task<ResponseData<UserResponseData>> Register(UserRegisterRequest request);
+        Task<ResponseData<NonResponseData>> Create(CreateProductRequest request);
+        Task<PaginationResult<ProductViewModel>> Get(GetProductRequest request);
     }
 }
